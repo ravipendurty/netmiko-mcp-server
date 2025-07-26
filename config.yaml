@@ -1,0 +1,41 @@
+# NetMiko MCP Server Configuration
+# Example configuration for network devices
+
+server:
+  name: "netmiko-mcp-server"
+  version: "1.0.0"
+  log_level: "INFO"
+
+# Example device configurations (optional - devices can also be added via MCP tools)
+devices:
+  router1:
+    host: "192.168.1.1"
+    device_type: "cisco_ios"
+    username: "admin"
+    password: "password"
+    port: 22
+    timeout: 30
+    secret: "enable_secret"  # Optional enable secret
+  
+  switch1:
+    host: "192.168.1.10"
+    device_type: "cisco_ios"
+    username: "admin"
+    password: "password"
+    port: 22
+    timeout: 30
+
+# Supported device types (NetMiko supported platforms)
+supported_device_types:
+  - cisco_ios
+  - cisco_nxos
+  - cisco_xr
+  - cisco_asa
+  - arista_eos
+  - juniper_junos
+  - hp_procurve
+  - dell_force10
+  - paloalto_panos
+  - fortinet
+  - checkpoint_gaia
+  - linux
