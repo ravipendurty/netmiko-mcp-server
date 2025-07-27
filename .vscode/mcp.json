@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "netmiko-mcp-server": {
+        "type": "stdio",
+        "command": "python",
+        "args": ["cli.py", "start", "--config", "junos_config.yaml"]
+    }
+  }
+  
+}

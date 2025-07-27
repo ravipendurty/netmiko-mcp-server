@@ -1,0 +1,19 @@
+server:
+  name: netmiko-mcp-server
+  version: 1.0.0
+  log_level: INFO
+devices:
+  pe1:
+    host: 192.168.121.101
+    device_type: juniper_junos
+    username: admin
+    password: admin@123
+    port: 22
+    timeout: 30
+  pe2:
+    host: 192.168.121.102
+    device_type: juniper_junos
+    username: admin
+    password: admin@123
+    port: 22
+    timeout: 30
